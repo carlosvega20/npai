@@ -6,19 +6,20 @@ import * as fs from 'fs';
 import inquirer from 'inquirer';
 import { exec } from 'child_process';
 import path from 'path';
+import os from 'os';
 import dotenv from 'dotenv';
-dotenv.config({ path: path.resolve(process.cwd(), '.env') })
+dotenv.config({ path: path.resolve(os.homedir(), '.openai') })
 
 const program = new Command();
 
 const API_URL = 'https://api.openai.com/v1/chat/completions';
 
-const DEFAULT_CONFIG_PATH = path.resolve(process.cwd(), '.env');
+const DEFAULT_CONFIG_PATH = path.resolve(os.homedir(), '.openai');
 
 const loadApiKeyFromEnv = () => {
   const apiKey = process.env.API_KEY;
   if (!apiKey) {
-    console.error('Error: API key not provided. Add API Key using: npai --apiKey <apiKey>');
+    console.error('Error: API key not provided. Add API Key using: npai -k <apiKey>');
     process.exit(1);
   }
   return apiKey;
@@ -132,9 +133,8 @@ promptUser(commands);
 program
   .version('1.0.0')
   .description("NPAI, Effortless NPM Command Mastery with AI. Say it, and we'll make it happen!")
-  .option('-c, --command <command>', 'Command to run')
   .option('-k, --apiKey <apiKey>', 'API key')
-  .arguments('<command>')
+  .arguments('[command]')
   .action(command => {
     program.command = command;
   })
