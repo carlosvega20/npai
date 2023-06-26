@@ -99,7 +99,6 @@ function promptUser(items) {
     console.log('No commands founded in your message');
     return;
   }
-console.log(items)
   const prompt = {
     type: 'list',
     name: 'selectedItem',
