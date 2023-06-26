@@ -1,0 +1,23 @@
+{
+  "name": "npai",
+  "version": "1.0.0",
+  "description": "Effortless NPM Command Mastery with AI. Say it, and we'll make it happen!",
+  "main": "src/cli.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "carlosvega20@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.4.0",
+    "commander": "^11.0.0",
+    "dotenv": "^16.3.1",
+    "inquirer": "^9.2.7"
+  },
+  "bin": {
+    "npai": "src/cli.js"
+  },
+  "keywords": [],
+  "devDependencies": {}
+}
