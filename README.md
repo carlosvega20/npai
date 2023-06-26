@@ -37,6 +37,11 @@ To use NPAI, simply enter the command npai followed by the desired options and c
 ```
 $ npai [options] [command]
 ```
+
+<div>
+    <img src="./assets/demo.gif" width="400px">
+</div>
+
 ## EXAMPLES
 
 ### Use natural language to describe what you need and expect npm commands
