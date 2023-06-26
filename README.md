@@ -39,7 +39,7 @@ $ npai [options] [command]
 ```
 
 <div>
-    <img src="./assets/demo.gif" width="400px">
+    <img src="./assets/demo.gif" width="800px">
 </div>
 
 ## EXAMPLES
