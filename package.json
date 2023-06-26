@@ -1,6 +1,6 @@
 {
   "name": "npai",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Effortless NPM Command Mastery with AI. Say it, and we'll make it happen!",
   "main": "src/cli.js",
   "type": "module",
