@@ -1,13 +1,25 @@
 {
   "name": "npai",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Effortless NPM Command Mastery with AI. Say it, and we'll make it happen!",
   "main": "src/cli.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "carlosvega20@gmail.com",
+  "repository": "https://github.com/carlosvega20/npai",
+  "keywords": [
+    "npm",
+    "npm ai",
+    "ai",
+    "llm",
+    "chatgpt",
+    "cli"
+  ],
+  "author": {
+    "name": "Carlos Vega",
+    "email": "carlosvega20@gmail.com"
+  },
   "license": "MIT",
   "dependencies": {
     "axios": "^1.4.0",
